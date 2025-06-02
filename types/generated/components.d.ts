@@ -178,10 +178,10 @@ export interface ElementsCard extends Struct.ComponentSchema {
     displayName: 'Card';
   };
   attributes: {
-    heading: Schema.Attribute.String;
+    heading: Schema.Attribute.Text;
     icon: Schema.Attribute.Media<'images'>;
     order: Schema.Attribute.Integer & Schema.Attribute.Unique;
-    subtitle: Schema.Attribute.String;
+    subtitle: Schema.Attribute.Text;
   };
 }
 

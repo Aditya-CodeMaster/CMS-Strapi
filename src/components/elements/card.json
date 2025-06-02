@@ -6,10 +6,10 @@
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "text"
     },
     "subtitle": {
-      "type": "string"
+      "type": "text"
     },
     "icon": {
       "type": "media",
