@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_elements_badges",
+  "info": {
+    "displayName": "Badge"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "variant": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Primary",
+        "Secondary",
+        "Custom"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_features_blocks",
+  "info": {
+    "displayName": "Features Block"
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "component": "elements.card",
+      "repeatable": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "footer_text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

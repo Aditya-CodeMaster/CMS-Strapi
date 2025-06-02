@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_elements_faqs",
+  "info": {
+    "displayName": "Faq"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "isBublished": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "config": {}
+}

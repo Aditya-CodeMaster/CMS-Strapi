@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_testimonial_blocks",
+  "info": {
+    "displayName": "Testimonial Block"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Testimonials": {
+      "type": "component",
+      "component": "elements.testimonial",
+      "repeatable": true
+    },
+    "CTA": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

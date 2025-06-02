@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_team_blocks",
+  "info": {
+    "displayName": "Team Block"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "team_memebers": {
+      "type": "component",
+      "component": "elements.team-member",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

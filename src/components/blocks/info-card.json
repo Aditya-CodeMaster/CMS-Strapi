@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_info_cards",
+  "info": {
+    "displayName": "Info Block"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": true
+    },
+    "features": {
+      "type": "component",
+      "component": "elements.feature",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

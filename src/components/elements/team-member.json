@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_elements_team_members",
+  "info": {
+    "displayName": "Team member"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    },
+    "isPublished": {
+      "type": "boolean",
+      "default": true
+    },
+    "backround_colour": {
+      "type": "enumeration",
+      "enum": [
+        "Orange/Yellow",
+        "Purple Blue",
+        "Light Blue",
+        "Light Green"
+      ]
+    }
+  },
+  "config": {}
+}

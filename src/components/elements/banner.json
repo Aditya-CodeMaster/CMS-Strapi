@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_banners",
+  "info": {
+    "displayName": "banner"
+  },
+  "options": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "isBublished": {
+      "type": "boolean",
+      "default": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

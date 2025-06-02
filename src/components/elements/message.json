@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_messages",
+  "info": {
+    "displayName": "message"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
