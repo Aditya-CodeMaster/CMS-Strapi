@@ -9,7 +9,7 @@
       "type": "string"
     },
     "answer": {
-      "type": "string"
+      "type": "text"
     },
     "isBublished": {
       "type": "boolean",

@@ -203,7 +203,7 @@ export interface ElementsFaq extends Struct.ComponentSchema {
     displayName: 'Faq';
   };
   attributes: {
-    answer: Schema.Attribute.String;
+    answer: Schema.Attribute.Text;
     isBublished: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     Question: Schema.Attribute.String;
   };
