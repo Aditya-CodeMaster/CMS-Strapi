@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_section_how_it_works",
+  "info": {
+    "displayName": "How it works"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "component": "elements.basic-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

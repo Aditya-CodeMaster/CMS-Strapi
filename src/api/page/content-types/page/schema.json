@@ -30,7 +30,10 @@
         "blocks.content-block",
         "blocks.faq-block",
         "blocks.messages-block",
-        "blocks.team-block"
+        "blocks.team-block",
+        "blocks.home-banner",
+        "section.process-section",
+        "section.how-it-works"
       ]
     }
   }

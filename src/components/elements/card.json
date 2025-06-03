@@ -8,9 +8,6 @@
     "heading": {
       "type": "text"
     },
-    "subtitle": {
-      "type": "text"
-    },
     "icon": {
       "type": "media",
       "multiple": false,
@@ -21,6 +18,14 @@
     "order": {
       "type": "integer",
       "unique": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "subHeading": {
+      "type": "text"
     }
   },
   "config": {}

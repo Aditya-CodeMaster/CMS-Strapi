@@ -1,10 +1,13 @@
 {
-  "collectionName": "components_elements_messages",
+  "collectionName": "components_elements_basic_cards",
   "info": {
-    "displayName": "Message"
+    "displayName": "basic card"
   },
   "options": {},
   "attributes": {
+    "button_text": {
+      "type": "string"
+    },
     "text": {
       "type": "string"
     },

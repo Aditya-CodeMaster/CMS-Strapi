@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_section_process_sections",
+  "info": {
+    "displayName": "Process section"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "footer_text": {
+      "type": "text"
+    },
+    "Process": {
+      "type": "component",
+      "component": "blocks.heading",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "CTA": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

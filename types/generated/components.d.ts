@@ -74,6 +74,18 @@ export interface BlocksHeroSection extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksHomeBanner extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_home_banners';
+  info: {
+    displayName: 'homeBanner';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+  };
+}
+
 export interface BlocksInfoCard extends Struct.ComponentSchema {
   collectionName: 'components_blocks_info_cards';
   info: {
@@ -172,16 +184,37 @@ export interface ElementsBanner extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsBasicCard extends Struct.ComponentSchema {
+  collectionName: 'components_elements_basic_cards';
+  info: {
+    displayName: 'basic card';
+  };
+  attributes: {
+    button_text: Schema.Attribute.String;
+    order: Schema.Attribute.Integer;
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsCallToAction extends Struct.ComponentSchema {
+  collectionName: 'components_elements_call_to_actions';
+  info: {
+    displayName: 'Call to Action';
+  };
+  attributes: {};
+}
+
 export interface ElementsCard extends Struct.ComponentSchema {
   collectionName: 'components_elements_cards';
   info: {
     displayName: 'Card';
   };
   attributes: {
+    cta: Schema.Attribute.Component<'elements.link', false>;
     heading: Schema.Attribute.Text;
     icon: Schema.Attribute.Media<'images'>;
     order: Schema.Attribute.Integer & Schema.Attribute.Unique;
-    subtitle: Schema.Attribute.Text;
+    subHeading: Schema.Attribute.Text;
   };
 }
 
@@ -250,7 +283,7 @@ export interface ElementsLogo extends Struct.ComponentSchema {
 export interface ElementsMessage extends Struct.ComponentSchema {
   collectionName: 'components_elements_messages';
   info: {
-    displayName: 'message';
+    displayName: 'Message';
   };
   attributes: {
     order: Schema.Attribute.Integer;
@@ -342,6 +375,33 @@ export interface LayoutHeader extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionHowItWorks extends Struct.ComponentSchema {
+  collectionName: 'components_section_how_it_works';
+  info: {
+    displayName: 'How it works';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    steps: Schema.Attribute.Component<'elements.basic-card', true>;
+    subHeading: Schema.Attribute.Text;
+  };
+}
+
+export interface SectionProcessSection extends Struct.ComponentSchema {
+  collectionName: 'components_section_process_sections';
+  info: {
+    displayName: 'Process section';
+  };
+  attributes: {
+    CTA: Schema.Attribute.Component<'elements.link', false>;
+    footer_text: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    Process: Schema.Attribute.Component<'blocks.heading', true>;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -351,6 +411,7 @@ declare module '@strapi/strapi' {
       'blocks.full-image': BlocksFullImage;
       'blocks.heading': BlocksHeading;
       'blocks.hero-section': BlocksHeroSection;
+      'blocks.home-banner': BlocksHomeBanner;
       'blocks.info-card': BlocksInfoCard;
       'blocks.messages-block': BlocksMessagesBlock;
       'blocks.paragraph': BlocksParagraph;
@@ -359,6 +420,8 @@ declare module '@strapi/strapi' {
       'blocks.testimonial-block': BlocksTestimonialBlock;
       'elements.badge': ElementsBadge;
       'elements.banner': ElementsBanner;
+      'elements.basic-card': ElementsBasicCard;
+      'elements.call-to-action': ElementsCallToAction;
       'elements.card': ElementsCard;
       'elements.cta': ElementsCta;
       'elements.faq': ElementsFaq;
@@ -372,6 +435,8 @@ declare module '@strapi/strapi' {
       'elements.testimonial': ElementsTestimonial;
       'layout.footer': LayoutFooter;
       'layout.header': LayoutHeader;
+      'section.how-it-works': SectionHowItWorks;
+      'section.process-section': SectionProcessSection;
     }
   }
 }
