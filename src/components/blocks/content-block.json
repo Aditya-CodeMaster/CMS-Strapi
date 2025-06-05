@@ -6,10 +6,10 @@
   "options": {},
   "attributes": {
     "Heading": {
-      "type": "string"
+      "type": "text"
     },
     "subtitle": {
-      "type": "string"
+      "type": "text"
     },
     "content": {
       "type": "text"

@@ -9,8 +9,8 @@ export interface BlocksContentBlock extends Struct.ComponentSchema {
     content: Schema.Attribute.Text;
     cta: Schema.Attribute.Component<'elements.link', false>;
     featured_image: Schema.Attribute.Media<'images'>;
-    Heading: Schema.Attribute.String;
-    subtitle: Schema.Attribute.String;
+    Heading: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.Text;
   };
 }
 
@@ -20,7 +20,7 @@ export interface BlocksFaqBlock extends Struct.ComponentSchema {
     displayName: 'Faq Block';
   };
   attributes: {
-    Faqs: Schema.Attribute.Component<'elements.faq', true>;
+    faqs: Schema.Attribute.Component<'elements.faq', true>;
     heading: Schema.Attribute.String;
   };
 }
@@ -70,7 +70,7 @@ export interface BlocksHeroSection extends Struct.ComponentSchema {
     image: Schema.Attribute.Media<'images'>;
     layout: Schema.Attribute.Enumeration<['default', 'centered', 'split']> &
       Schema.Attribute.DefaultTo<'default'>;
-    subtitle: Schema.Attribute.String;
+    subtitle: Schema.Attribute.Text;
   };
 }
 
@@ -95,7 +95,7 @@ export interface BlocksInfoCard extends Struct.ComponentSchema {
     cta: Schema.Attribute.Component<'elements.link', true>;
     features: Schema.Attribute.Component<'elements.feature', true>;
     heading: Schema.Attribute.String;
-    subtitle: Schema.Attribute.String;
+    subtitle: Schema.Attribute.Text;
   };
 }
 
@@ -238,7 +238,7 @@ export interface ElementsFaq extends Struct.ComponentSchema {
   attributes: {
     answer: Schema.Attribute.Text;
     isBublished: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
-    Question: Schema.Attribute.String;
+    question: Schema.Attribute.String;
   };
 }
 
@@ -344,8 +344,9 @@ export interface ElementsTestimonial extends Struct.ComponentSchema {
   attributes: {
     author: Schema.Attribute.String;
     avatar: Schema.Attribute.Media<'images'>;
-    content: Schema.Attribute.String;
+    content: Schema.Attribute.Text;
     subtitle: Schema.Attribute.String;
+    year: Schema.Attribute.String;
   };
 }
 

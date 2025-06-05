@@ -8,7 +8,7 @@
     "heading": {
       "type": "string"
     },
-    "Faqs": {
+    "faqs": {
       "type": "component",
       "component": "elements.faq",
       "repeatable": true

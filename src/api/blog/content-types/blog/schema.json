@@ -22,9 +22,10 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     },
-    "image": {
+    "article_image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -40,9 +41,26 @@
       "components": [
         "blocks.paragraph",
         "blocks.paragraph-with-image",
-        "blocks.heading",
         "blocks.full-image"
       ]
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "warming",
+        "soothing",
+        "[#B2C2EA]"
+      ]
+    },
+    "read_minutes": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "mobileStyle": {
+      "type": "string"
     }
   }
 }

@@ -384,26 +384,27 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    article_image: Schema.Attribute.Media<'images'>;
     author: Schema.Attribute.String;
     blocks: Schema.Attribute.DynamicZone<
-      [
-        'blocks.paragraph',
-        'blocks.paragraph-with-image',
-        'blocks.heading',
-        'blocks.full-image',
-      ]
+      ['blocks.paragraph', 'blocks.paragraph-with-image', 'blocks.full-image']
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
     featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
-    image: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'> &
       Schema.Attribute.Private;
+    mobileStyle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'title'>;
+    read_minutes: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    tag: Schema.Attribute.String;
+    theme: Schema.Attribute.Enumeration<
+      ['primary', 'warming', 'soothing', '[#B2C2EA]']
+    >;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

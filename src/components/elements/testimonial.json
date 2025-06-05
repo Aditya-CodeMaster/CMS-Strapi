@@ -9,7 +9,7 @@
       "type": "string"
     },
     "content": {
-      "type": "string"
+      "type": "text"
     },
     "avatar": {
       "type": "media",
@@ -19,6 +19,9 @@
       ]
     },
     "subtitle": {
+      "type": "string"
+    },
+    "year": {
       "type": "string"
     }
   },
