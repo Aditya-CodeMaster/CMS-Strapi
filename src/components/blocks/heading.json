@@ -7,6 +7,16 @@
   "attributes": {
     "content": {
       "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

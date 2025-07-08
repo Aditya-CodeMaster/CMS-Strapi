@@ -56,6 +56,8 @@ export interface BlocksHeading extends Struct.ComponentSchema {
   };
   attributes: {
     content: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images', true>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -398,6 +400,7 @@ export interface SectionProcessSection extends Struct.ComponentSchema {
     footer_text: Schema.Attribute.Text;
     heading: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
+    images: Schema.Attribute.Media<'images', true>;
     Process: Schema.Attribute.Component<'blocks.heading', true>;
     subtitle: Schema.Attribute.String;
   };

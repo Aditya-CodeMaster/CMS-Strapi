@@ -30,6 +30,13 @@
       "type": "component",
       "component": "elements.link",
       "repeatable": false
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}
