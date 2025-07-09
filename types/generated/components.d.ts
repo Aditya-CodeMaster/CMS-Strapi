@@ -304,6 +304,7 @@ export interface ElementsSeo extends Struct.ComponentSchema {
     metaDescription: Schema.Attribute.Text;
     metaImage: Schema.Attribute.Media<'images'>;
     metaTitle: Schema.Attribute.String;
+    titleTemplate: Schema.Attribute.Text;
   };
 }
 
