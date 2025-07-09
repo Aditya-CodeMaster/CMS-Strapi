@@ -41,7 +41,8 @@
       "components": [
         "blocks.paragraph",
         "blocks.paragraph-with-image",
-        "blocks.full-image"
+        "blocks.full-image",
+        "elements.seo"
       ]
     },
     "theme": {

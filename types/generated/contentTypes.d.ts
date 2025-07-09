@@ -387,7 +387,12 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     article_image: Schema.Attribute.Media<'images'>;
     author: Schema.Attribute.String;
     blocks: Schema.Attribute.DynamicZone<
-      ['blocks.paragraph', 'blocks.paragraph-with-image', 'blocks.full-image']
+      [
+        'blocks.paragraph',
+        'blocks.paragraph-with-image',
+        'blocks.full-image',
+        'elements.seo',
+      ]
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -463,6 +468,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
         'blocks.content-block',
         'elements.banner',
         'blocks.faq-block',
+        'elements.seo',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
@@ -507,6 +513,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'blocks.home-banner',
         'section.process-section',
         'section.how-it-works',
+        'elements.seo',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

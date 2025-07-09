@@ -26,7 +26,8 @@
         "blocks.info-card",
         "blocks.content-block",
         "elements.banner",
-        "blocks.faq-block"
+        "blocks.faq-block",
+        "elements.seo"
       ]
     }
   }

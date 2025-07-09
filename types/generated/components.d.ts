@@ -296,12 +296,11 @@ export interface ElementsMessage extends Struct.ComponentSchema {
 export interface ElementsSeo extends Struct.ComponentSchema {
   collectionName: 'components_elements_seos';
   info: {
-    displayName: 'SEO';
+    displayName: 'MetaTags';
   };
   attributes: {
-    canonicalURL: Schema.Attribute.String;
-    keywords: Schema.Attribute.String;
-    metaDescription: Schema.Attribute.String;
+    keywords: Schema.Attribute.Text;
+    metaDescription: Schema.Attribute.Text;
     metaImage: Schema.Attribute.Media<'images'>;
     metaTitle: Schema.Attribute.String;
   };

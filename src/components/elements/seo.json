@@ -1,7 +1,7 @@
 {
   "collectionName": "components_elements_seos",
   "info": {
-    "displayName": "SEO"
+    "displayName": "MetaTags"
   },
   "options": {},
   "attributes": {
@@ -9,10 +9,10 @@
       "type": "string"
     },
     "metaDescription": {
-      "type": "string"
+      "type": "text"
     },
     "keywords": {
-      "type": "string"
+      "type": "text"
     },
     "metaImage": {
       "type": "media",
@@ -20,9 +20,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "canonicalURL": {
-      "type": "string"
     }
   },
   "config": {}

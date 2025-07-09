@@ -33,7 +33,8 @@
         "blocks.team-block",
         "blocks.home-banner",
         "section.process-section",
-        "section.how-it-works"
+        "section.how-it-works",
+        "elements.seo"
       ]
     }
   }
