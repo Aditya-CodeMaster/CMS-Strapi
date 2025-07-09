@@ -23,6 +23,9 @@
     },
     "footer_text": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   },
   "config": {}
