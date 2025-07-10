@@ -381,7 +381,7 @@ export interface ElementsText extends Struct.ComponentSchema {
     displayName: 'Text';
   };
   attributes: {
-    text: Schema.Attribute.String;
+    text: Schema.Attribute.Text;
   };
 }
 
@@ -458,8 +458,8 @@ export interface SectionTypesOfTherapyFaq extends Struct.ComponentSchema {
   attributes: {
     cta: Schema.Attribute.Component<'elements.link', false>;
     howItWorksOnline: Schema.Attribute.Text;
-    question: Schema.Attribute.Text;
-    type: Schema.Attribute.Component<'elements.text', true>;
+    Intro: Schema.Attribute.Component<'elements.text', false>;
+    question: Schema.Attribute.String;
     whyPeopleChooseIt: Schema.Attribute.Component<'elements.text', true>;
     worksWell: Schema.Attribute.Component<'elements.text', true>;
   };

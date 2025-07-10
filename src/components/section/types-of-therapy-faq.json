@@ -6,17 +6,17 @@
   "options": {},
   "attributes": {
     "question": {
-      "type": "text"
+      "type": "string"
     },
     "whyPeopleChooseIt": {
       "type": "component",
       "component": "elements.text",
       "repeatable": true
     },
-    "type": {
+    "Intro": {
       "type": "component",
       "component": "elements.text",
-      "repeatable": true
+      "repeatable": false
     },
     "worksWell": {
       "type": "component",

@@ -27,7 +27,8 @@
         "blocks.content-block",
         "elements.banner",
         "blocks.faq-block",
-        "elements.seo"
+        "elements.seo",
+        "section.rich-text-faq"
       ]
     }
   }

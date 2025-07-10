@@ -469,6 +469,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
         'elements.banner',
         'blocks.faq-block',
         'elements.seo',
+        'section.rich-text-faq',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
