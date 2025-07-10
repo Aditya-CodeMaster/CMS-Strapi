@@ -514,6 +514,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'section.process-section',
         'section.how-it-works',
         'elements.seo',
+        'section.rich-text-faq',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_rich_qas",
+  "info": {
+    "displayName": "richQA"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

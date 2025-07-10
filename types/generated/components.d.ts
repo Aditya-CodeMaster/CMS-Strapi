@@ -294,6 +294,17 @@ export interface ElementsMessage extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsRichQa extends Struct.ComponentSchema {
+  collectionName: 'components_elements_rich_qas';
+  info: {
+    displayName: 'richQA';
+  };
+  attributes: {
+    answer: Schema.Attribute.Blocks;
+    question: Schema.Attribute.String;
+  };
+}
+
 export interface ElementsSeo extends Struct.ComponentSchema {
   collectionName: 'components_elements_seos';
   info: {
@@ -407,6 +418,17 @@ export interface SectionProcessSection extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionRichTextFaq extends Struct.ComponentSchema {
+  collectionName: 'components_section_rich_text_faqs';
+  info: {
+    displayName: 'Rich text Faq';
+  };
+  attributes: {
+    Faqs: Schema.Attribute.Component<'elements.rich-qa', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -434,6 +456,7 @@ declare module '@strapi/strapi' {
       'elements.link': ElementsLink;
       'elements.logo': ElementsLogo;
       'elements.message': ElementsMessage;
+      'elements.rich-qa': ElementsRichQa;
       'elements.seo': ElementsSeo;
       'elements.social-links': ElementsSocialLinks;
       'elements.team-member': ElementsTeamMember;
@@ -442,6 +465,7 @@ declare module '@strapi/strapi' {
       'layout.header': LayoutHeader;
       'section.how-it-works': SectionHowItWorks;
       'section.process-section': SectionProcessSection;
+      'section.rich-text-faq': SectionRichTextFaq;
     }
   }
 }

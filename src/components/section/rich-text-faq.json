@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_rich_text_faqs",
+  "info": {
+    "displayName": "Rich text Faq"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Faqs": {
+      "type": "component",
+      "component": "elements.rich-qa",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
