@@ -381,7 +381,7 @@ export interface ElementsText extends Struct.ComponentSchema {
     displayName: 'Text';
   };
   attributes: {
-    text: Schema.Attribute.Text;
+    text: Schema.Attribute.String;
   };
 }
 
