@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_type_of_therapy_faq_blocks",
+  "info": {
+    "displayName": "Type of therapy FAQ Block"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Faqs": {
+      "type": "component",
+      "component": "section.types-of-therapy-faq",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

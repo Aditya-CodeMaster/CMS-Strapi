@@ -162,6 +162,17 @@ export interface BlocksTestimonialBlock extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksTypeOfTherapyFaqBlock extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_type_of_therapy_faq_blocks';
+  info: {
+    displayName: 'Type of therapy FAQ Block';
+  };
+  attributes: {
+    Faqs: Schema.Attribute.Component<'section.types-of-therapy-faq', true>;
+    Heading: Schema.Attribute.String;
+  };
+}
+
 export interface ElementsBadge extends Struct.ComponentSchema {
   collectionName: 'components_elements_badges';
   info: {
@@ -364,6 +375,16 @@ export interface ElementsTestimonial extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsText extends Struct.ComponentSchema {
+  collectionName: 'components_elements_texts';
+  info: {
+    displayName: 'Text';
+  };
+  attributes: {
+    text: Schema.Attribute.Text;
+  };
+}
+
 export interface LayoutFooter extends Struct.ComponentSchema {
   collectionName: 'components_layout_footers';
   info: {
@@ -429,6 +450,21 @@ export interface SectionRichTextFaq extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionTypesOfTherapyFaq extends Struct.ComponentSchema {
+  collectionName: 'components_section_types_of_therapy_faqs';
+  info: {
+    displayName: 'Types Of therapy faq Item';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'elements.link', false>;
+    howItWorksOnline: Schema.Attribute.Text;
+    question: Schema.Attribute.Text;
+    type: Schema.Attribute.Component<'elements.text', true>;
+    whyPeopleChooseIt: Schema.Attribute.Component<'elements.text', true>;
+    worksWell: Schema.Attribute.Component<'elements.text', true>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -445,6 +481,7 @@ declare module '@strapi/strapi' {
       'blocks.paragraph-with-image': BlocksParagraphWithImage;
       'blocks.team-block': BlocksTeamBlock;
       'blocks.testimonial-block': BlocksTestimonialBlock;
+      'blocks.type-of-therapy-faq-block': BlocksTypeOfTherapyFaqBlock;
       'elements.badge': ElementsBadge;
       'elements.banner': ElementsBanner;
       'elements.basic-card': ElementsBasicCard;
@@ -461,11 +498,13 @@ declare module '@strapi/strapi' {
       'elements.social-links': ElementsSocialLinks;
       'elements.team-member': ElementsTeamMember;
       'elements.testimonial': ElementsTestimonial;
+      'elements.text': ElementsText;
       'layout.footer': LayoutFooter;
       'layout.header': LayoutHeader;
       'section.how-it-works': SectionHowItWorks;
       'section.process-section': SectionProcessSection;
       'section.rich-text-faq': SectionRichTextFaq;
+      'section.types-of-therapy-faq': SectionTypesOfTherapyFaq;
     }
   }
 }

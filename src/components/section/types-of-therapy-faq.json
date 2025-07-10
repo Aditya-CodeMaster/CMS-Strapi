@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_section_types_of_therapy_faqs",
+  "info": {
+    "displayName": "Types Of therapy faq Item"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "whyPeopleChooseIt": {
+      "type": "component",
+      "component": "elements.text",
+      "repeatable": true
+    },
+    "type": {
+      "type": "component",
+      "component": "elements.text",
+      "repeatable": true
+    },
+    "worksWell": {
+      "type": "component",
+      "component": "elements.text",
+      "repeatable": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "howItWorksOnline": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

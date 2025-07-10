@@ -515,6 +515,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'section.how-it-works',
         'elements.seo',
         'section.rich-text-faq',
+        'blocks.type-of-therapy-faq-block',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
