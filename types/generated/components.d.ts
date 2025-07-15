@@ -35,6 +35,7 @@ export interface BlocksFeaturesBlock extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     features: Schema.Attribute.Component<'elements.card', true>;
     footer_text: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
