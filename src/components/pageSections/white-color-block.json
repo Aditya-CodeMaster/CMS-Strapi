@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_blocks_white_color_block",
+  "info": {
+    "displayName": "White Color Block",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_team_member",
+  "info": {
+    "displayName": "Team Member",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "position": { "type": "string" },
+    "picture": { "type": "media", "multiple": false, "required": true },
+    "color": { "type": "string" }
+  }
+}

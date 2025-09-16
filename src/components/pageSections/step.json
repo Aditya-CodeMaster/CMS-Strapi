@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_steps",
+  "info": {
+    "displayName": "Step",
+    "description": "Single step for How It Works block"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer",
+      "required": true
+    },
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_making_therapy_fit",
+  "info": { "displayName": "Fit Therapy" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string", "required": true },
+    "description": { "type": "text", "required": true },
+    "footerText": { "type": "string", "required": true },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.feature",
+      "required": true
+    }
+  }
+}

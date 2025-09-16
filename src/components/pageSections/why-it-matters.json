@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_why_it_matters",
+  "info": {
+    "displayName": "Why It Matters"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

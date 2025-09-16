@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_our_team",
+  "info": {
+    "displayName": "Our Team",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "json" },
+    "members": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.team-member"
+    }
+  }
+}

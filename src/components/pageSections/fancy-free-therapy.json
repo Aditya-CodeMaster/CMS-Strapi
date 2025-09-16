@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_fancy_free_therapy",
+  "info": {
+    "displayName": "Free Therapy",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" },
+    "backgroundColor": { "type": "string" }
+  }
+}

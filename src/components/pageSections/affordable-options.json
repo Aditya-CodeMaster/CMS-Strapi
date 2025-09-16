@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_affordable_options",
+  "info": { "displayName": "Affordable" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string", "required": true },
+    "description": { "type": "text", "required": true },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.feature",
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.cta",
+      "required": true
+    }
+  }
+}

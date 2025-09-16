@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_article",
+  "info": {
+    "displayName": "Article",
+    "icon": "file-text"
+  },
+  "options": {},
+  "attributes": {
+    "slug": { "type": "string", "required": true },
+    "title": { "type": "string", "required": true },
+    "tag": { "type": "string" },
+    "read_minutes": { "type": "integer" },
+    "theme": { "type": "string" },
+    "article_image": {
+      "type": "media",
+      "multiple": false
+    },
+    "style": { "type": "string" },
+    "mobileStyle": { "type": "string" }
+  }
+}

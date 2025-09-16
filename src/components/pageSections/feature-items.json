@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_pagesections_feature_items",
+  "info": {
+    "displayName": "Feature Item",
+    "description": "Single feature inside How To Choose Therapy block"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    }
+  }
+}

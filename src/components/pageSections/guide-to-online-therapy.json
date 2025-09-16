@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_guide_to_online_therapy",
+  "info": { "displayName": "Guide" },
+  "options": {},
+  "attributes": {
+    "heading": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "content": { "type": "richtext" },
+    "desktopImage": { "type": "media", "multiple": false, "required": true },
+    "illustration": { "type": "media", "multiple": false, "required": true },
+    "className": { "type": "string" }
+  }
+}

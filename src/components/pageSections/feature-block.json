@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_feature_block",
+  "info": {
+    "displayName": "Feature Block",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" },
+    "backgroundColor": { "type": "string" }
+  }
+}

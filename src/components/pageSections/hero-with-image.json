@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_hero_with_images",
+  "info": {
+    "displayName": "Hero Image",
+    "description": "Hero section with center image and cursor icon"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "image": { "type": "media", "multiple": false, "required": true },
+    "centerImage": { "type": "media", "multiple": false, "required": true },
+    "cursorIcon": { "type": "media", "multiple": false, "required": true }
+  }
+}

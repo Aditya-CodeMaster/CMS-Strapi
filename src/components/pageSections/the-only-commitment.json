@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_the_only_commitment",
+  "info": {
+    "displayName": "Commitment",
+    "icon": "lock"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "text" },
+    "whiteBoxes": { "type": "json" },
+    "floatingText": { "type": "string" }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_how_to_choose_therapy",
+  "info": { "displayName": "Choose Therapy" },
+  "options": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "pagesections.home-banner-block"
+    },
+    "features": {
+      "type": "component",
+      "component": "pagesections.how-to-choose-therapy-feature"
+    },
+    "mobileIllustration": { "type": "media", "multiple": false },
+    "desktopIllustration": { "type": "media", "multiple": false }
+  }
+}

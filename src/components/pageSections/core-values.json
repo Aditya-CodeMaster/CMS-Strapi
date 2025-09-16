@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_core_values",
+  "info": {
+    "displayName": "Core Values",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": {
+      "type": "json",
+      "required": true
+    },
+    "boxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.core-value-box"
+    },
+    "ctaText": { "type": "string" },
+    "customButtonClass": { "type": "string" }
+  }
+}

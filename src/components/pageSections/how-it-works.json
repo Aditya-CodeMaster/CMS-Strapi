@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_how_it_works",
+  "info": {
+    "displayName": "How It Works",
+    "description": "Block showing steps of how it works"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.step",
+      "required": true
+    }
+  }
+}

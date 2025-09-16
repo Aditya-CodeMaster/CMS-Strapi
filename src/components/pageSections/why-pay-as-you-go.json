@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_blocks_why_pay_as_you_go",
+  "info": {
+    "displayName": "Why Pay",
+    "icon": "credit-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "colorBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.color-box"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "customBoxClass": {
+      "type": "string"
+    },
+    "contentRotatedClass": {
+      "type": "string"
+    },
+    "desktopCardsSection": {
+      "type": "string"
+    }
+  }
+}

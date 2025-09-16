@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocks_give_it_time",
+  "info": {
+    "displayName": "Give Time",
+    "icon": "clock",
+    "description": "Block about giving therapy time to work"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "footerText": {
+      "type": "richtext"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.therapy-feature"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  }
+}

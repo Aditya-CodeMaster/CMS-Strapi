@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_check_qualifications",
+  "info": {
+    "displayName": "Check Quals",
+    "icon": "check-circle",
+    "description": "Block to show therapist qualifications and profiles"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "description": {
+      "type": "string"
+    },
+    "footerText": {
+      "type": "text"
+    }
+  }
+}

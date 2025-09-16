@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_color_box",
+  "info": {
+    "displayName": "Color Box",
+    "icon": "square"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "text" },
+    "image": { "type": "media", "multiple": false }
+  }
+}

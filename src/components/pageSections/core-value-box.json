@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_blocks_core_value_box",
+  "info": {
+    "displayName": "Core Value Box",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "text": { "type": "string", "required": true },
+    "color": { "type": "string", "required": true }
+  }
+}

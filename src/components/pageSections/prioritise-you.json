@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_blocks_prioritise_you",
+  "info": {
+    "displayName": "Prioritise You",
+    "description": "Block: Prioritise yourself in finding therapy"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "footerText": {
+      "type": "richtext"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.therapy-feature"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  }
+}

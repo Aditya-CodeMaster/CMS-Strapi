@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_therapy_reason_items",
+  "info": {
+    "displayName": "TherapyReasonItem",
+    "description": "A reason used inside Therapy FAQ answers"
+  },
+  "options": {},
+  "attributes": {
+    "text": { "type": "text", "required": true },
+    "description": { "type": "text" }
+  }
+}

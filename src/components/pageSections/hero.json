@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_blocks_hero",
+  "info": {
+    "displayName": "Hero",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "textBoxClass": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "customSubtitleClass": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "customButtonClass": {
+      "type": "string"
+    },
+    "negativeMargin": {
+      "type": "boolean",
+      "default": false
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "inputImageTitle": {
+      "type": "string"
+    }
+  }
+}

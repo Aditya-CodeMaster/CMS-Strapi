@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_how_to_choose_therapy_feature",
+  "info": {
+    "displayName": "How To Choose Therapy Feature",
+    "description": "Block for How to Choose Therapy section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "footerText": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.feature-items"
+    }
+  }
+}

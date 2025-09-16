@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_unsure_where_to_start",
+  "info": {
+    "displayName": "Get Started",
+    "icon": "help"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string" },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_perks",
+  "info": {
+    "displayName": "Perk",
+    "description": "Single perk for WhyEmoteCare block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

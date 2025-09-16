@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_blocks_eligibility_sections",
+  "info": {
+    "displayName": "Eligibility",
+    "description": "Section block for eligibility details"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.eligibility-feature",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true
+    },
+    "ctaLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

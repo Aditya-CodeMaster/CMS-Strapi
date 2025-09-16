@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_blocks_home_banner_blocks",
+  "info": {
+    "displayName": "HomeBannerBlock",
+    "description": "Banner section with heading and content"
+  },
+  "options": {},
+  "attributes": {
+    "heading": { "type": "string" },
+    "content": { "type": "text" }
+  }
+}

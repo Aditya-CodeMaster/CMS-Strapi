@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_message",
+  "info": {
+    "displayName": "Message",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

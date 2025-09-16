@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_why_flexibility_matters",
+  "info": {
+    "displayName": "Flexibility",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "listOfReasons": {
+      "type": "json",
+      "required": false
+    },
+    "paragraphs": {
+      "type": "json",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_blocks_why_emote_care",
+  "info": {
+    "displayName": "Why Us",
+    "description": "Block showing why users should choose EmoteCare"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "perks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.perk",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string"
+    }
+  }
+}

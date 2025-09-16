@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_client_stories",
+  "info": {
+    "displayName": "Stories",
+    "icon": "comments"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.client-story"
+    },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" },
+    "customClass": { "type": "string" }
+  }
+}

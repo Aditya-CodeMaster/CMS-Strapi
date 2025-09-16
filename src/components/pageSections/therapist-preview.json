@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blocks_therapist_preview",
+  "info": {
+    "displayName": "Therapist Preview",
+    "icon": "user-md"
+  },
+  "options": {},
+  "attributes": {
+    "userId": { "type": "string" },
+    "avatarUrl": { "type": "media", "multiple": false },
+    "videoUrl": { "type": "string" },
+    "firstName": { "type": "string" },
+    "lastName": { "type": "string" },
+    "price": { "type": "string" },
+    "rateId": { "type": "string" },
+    "yearsOfExperience": { "type": "integer" },
+    "fifteenMinutesNextAvailableDate": { "type": "string" },
+    "header": { "type": "string" },
+    "bio": { "type": "text" },
+    "topAreas": { "type": "json" },
+    "therapyAreas": { "type": "json" },
+    "qualifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.therapist-qualification-preview"
+    }
+  }
+}

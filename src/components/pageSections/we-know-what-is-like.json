@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blocks_we_know_what_is_like",
+  "info": {
+    "displayName": "We Know",
+    "description": "Block showing content and CTA for We Know What Is Like section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "mobileTitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  }
+}

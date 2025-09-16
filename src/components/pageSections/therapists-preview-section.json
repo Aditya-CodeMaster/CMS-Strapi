@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_therapists_preview_section",
+  "info": {
+    "displayName": "Therapists Preview Section",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" },
+    "therapists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.therapist-preview-block"
+    }
+  }
+}

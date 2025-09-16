@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_blocks_reduce_stress",
+  "info": { "displayName": "Reduce Stress" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "text", "required": true }
+  }
+}

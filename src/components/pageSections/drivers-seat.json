@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_drivers_seat",
+  "info": {
+    "displayName": "Driver’s Seat",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "ctaText": { "type": "string", "required": true },
+    "ctaLink": { "type": "string", "required": true },
+    "howItWorksCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.how-it-works-card"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_blocks_help_someone_instructions",
+  "info": {
+    "displayName": "Help Someone",
+    "description": "Block with steps to help someone instructions"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.help-someone-instructions-card",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true
+    },
+    "ctaLink": {
+      "type": "string",
+      "required": true
+    },
+    "footerText": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

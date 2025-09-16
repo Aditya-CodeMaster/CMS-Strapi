@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_client_stories_items",
+  "info": {
+    "displayName": "Client Story",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "year": { "type": "integer", "required": true },
+    "avatar": { "type": "media", "multiple": false },
+    "quote": { "type": "text", "required": true }
+  }
+}

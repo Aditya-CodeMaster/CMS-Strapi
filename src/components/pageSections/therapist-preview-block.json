@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_therapist_preview_block",
+  "info": {
+    "displayName": "Therapist Preview Block",
+    "icon": "id-card"
+  },
+  "options": {},
+  "attributes": {
+    "therapist": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pagesections.therapist-preview"
+    },
+    "index": { "type": "integer" },
+    "bio": { "type": "text" },
+    "price": { "type": "string" },
+    "therapistExperience": { "type": "string" },
+    "firstName": { "type": "string" },
+    "lastName": { "type": "string" },
+    "qualifications": { "type": "string" },
+    "badges": { "type": "json" },
+    "hasFreeConsultation": { "type": "boolean" },
+    "isMobile": { "type": "boolean" }
+  }
+}

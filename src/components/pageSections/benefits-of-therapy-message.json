@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_messages",
+  "info": {
+    "displayName": "Message",
+    "description": "A single chat/message bubble"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

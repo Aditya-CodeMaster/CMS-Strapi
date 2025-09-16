@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocks_why_free_therapy",
+  "info": {
+    "displayName": "Why Free",
+    "description": "Section block for Why Free Therapy"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.why-free-therapy-feature"
+    },
+    "footerText": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  }
+}

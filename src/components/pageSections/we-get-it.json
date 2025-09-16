@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blocks_we_get_it",
+  "info": {
+    "displayName": "We Get It",
+    "icon": "comment"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "messages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.message"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_therapy_faq",
+  "info": { "displayName": "Therapy FAQ" },
+  "options": {},
+  "attributes": {
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.therapy-faq-item",
+      "required": true
+    }
+  }
+}

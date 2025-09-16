@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_steps_sections",
+  "info": {
+    "displayName": "Steps",
+    "description": "Steps section with multiple steps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "className": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.step-simple",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_blocks_human_touch_therapy",
+  "info": { "displayName": "Human Touch" },
+  "options": {},
+  "attributes": {
+    "heading": { "type": "string", "required": true },
+    "content": { "type": "text", "required": true }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_blocks_access_therapy_anywhere",
+  "info": { "displayName": "Access Anywhere" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "imageSrc": { "type": "media", "multiple": false, "required": true },
+    "content": { "type": "text", "required": true }
+  }
+}

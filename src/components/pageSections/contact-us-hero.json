@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_contact_us_heroes",
+  "info": {
+    "displayName": "ContactUsHeroBlock",
+    "description": "Hero section for contact us page"
+  },
+  "options": {},
+  "attributes": {
+    "backgroundColor": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "footerText": {
+      "type": "string"
+    }
+  }
+}

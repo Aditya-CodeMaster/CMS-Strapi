@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_blocks_getting_started_sections",
+  "info": {
+    "displayName": "GettingStartedBlock",
+    "description": "Block for Getting Started section with multiple color boxes"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "backgroundColor": {
+      "type": "string",
+      "required": true
+    },
+    "colorBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.single-color-box",
+      "required": true
+    },
+    "ctaLink": {
+      "type": "string",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true
+    },
+    "footerText": {
+      "type": "string"
+    }
+  }
+}

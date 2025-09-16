@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_try_free_intro_call",
+  "info": {
+    "displayName": "Intro Call",
+    "icon": "phone",
+    "description": "Block encouraging users to try a free intro call"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "footerText": {
+      "type": "richtext"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.therapy-feature"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  }
+}

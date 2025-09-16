@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_therapist_qualification_preview",
+  "info": {
+    "displayName": "Therapist Qualification Preview",
+    "icon": "certificate"
+  },
+  "options": {},
+  "attributes": {
+    "membershipBody": { "type": "string" },
+    "membershipBodyAbbreviation": { "type": "string" },
+    "profession": { "type": "string" }
+  }
+}

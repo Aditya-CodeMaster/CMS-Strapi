@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_blocks_what_makes_you_comfortable",
+  "info": {
+    "displayName": "Comfort",
+    "description": "What You Need section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "whiteBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.white-color-block"
+    },
+    "footerText": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_blocks_know_what_are_you_looking",
+  "info": {
+    "displayName": "Know You Need",
+    "description": "Block showing content and CTA for We Know What Is Like section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "whiteBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.white-color-block"
+    }
+  }
+}

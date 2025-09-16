@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_blog_carousel",
+  "info": {
+    "displayName": "Blog Carousel",
+    "icon": "carousel"
+  },
+  "options": {},
+  "attributes": {
+    "background": { "type": "string" },
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.article"
+    }
+  }
+}

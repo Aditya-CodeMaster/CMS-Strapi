@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_help_someone_instructions_cards",
+  "info": {
+    "displayName": "Help Someone",
+    "description": "Single instruction card for Help Someone Instructions block"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

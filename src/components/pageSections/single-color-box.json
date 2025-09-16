@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_blocks_color_boxes",
+  "info": {
+    "displayName": "ColorBox",
+    "description": "Single color box inside GettingStarted block"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "mobileImageClass": {
+      "type": "string"
+    },
+    "mobileTextClass": {
+      "type": "string"
+    }
+  }
+}

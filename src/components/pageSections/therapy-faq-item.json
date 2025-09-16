@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_therapy_faq_items",
+  "info": {
+    "displayName": "TherapyFaqItem",
+    "description": "FAQ item with multiple sections about online therapy"
+  },
+  "options": {},
+  "attributes": {
+    "question": { "type": "string", "required": true },
+    "howItWorksOnline": { "type": "text" },
+    "whyPeopleChooseIt": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.therapy-reason-item"
+    },
+    "worksWell": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.therapy-reason-item"
+    },
+    "intro": {
+      "type": "component",
+      "component": "pagesections.therapy-reason-item"
+    },
+    "cta": {
+      "type": "component",
+      "component": "pagesections.cta"
+    }
+  }
+}

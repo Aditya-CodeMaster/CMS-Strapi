@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_eligibility_features",
+  "info": {
+    "displayName": "EligibilityFeature",
+    "description": "Single feature item for the eligibility section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

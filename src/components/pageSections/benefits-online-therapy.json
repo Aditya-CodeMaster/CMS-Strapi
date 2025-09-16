@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_benefits_online_therapy",
+  "info": { "displayName": "Benefits" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "messages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.benefits-of-therapy-message",
+      "required": true
+    },
+    "description": { "type": "text", "required": true }
+  }
+}

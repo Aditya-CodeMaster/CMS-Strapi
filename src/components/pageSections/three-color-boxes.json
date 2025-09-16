@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_three_color_boxes",
+  "info": {
+    "displayName": "Color Boxes",
+    "description": "Block with three colored cards"
+  },
+  "options": {},
+  "attributes": {
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.color-box-card",
+      "required": true
+    }
+  }
+}

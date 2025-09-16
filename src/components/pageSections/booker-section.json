@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_booker_section",
+  "info": {
+    "displayName": "Booker",
+    "icon": "play"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "paragraph": { "type": "text" },
+    "videoUrl": { "type": "string" },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" }
+  }
+}

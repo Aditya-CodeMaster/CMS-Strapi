@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_blocks_why_we_are_here",
+  "info": {
+    "displayName": "Why We Are Here",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": {
+      "type": "json",
+      "required": true
+    },
+    "story": {
+      "type": "json",
+      "required": true
+    },
+    "image": { "type": "media", "multiple": false }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_in_person_therapy",
+  "info": { "displayName": "In Person" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string", "required": true },
+    "footerText": { "type": "string", "required": true },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.feature",
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.cta",
+      "required": true
+    }
+  }
+}

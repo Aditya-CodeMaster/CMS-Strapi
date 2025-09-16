@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_why_therapy_matters",
+  "info": { "displayName": "Why Therapy" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "text", "required": true },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.feature",
+      "required": true
+    },
+    "footerText": { "type": "string", "required": true }
+  }
+}
