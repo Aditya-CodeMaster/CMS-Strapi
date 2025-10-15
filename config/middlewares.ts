@@ -9,4 +9,5 @@ export default [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
+  'global::absolute-url', // Custom middleware to transform relative URLs to absolute URLs
 ];
