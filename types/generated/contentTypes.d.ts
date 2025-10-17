@@ -203,6 +203,63 @@ export interface AdminRole extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface AdminSession extends Struct.CollectionTypeSchema {
+  collectionName: 'strapi_sessions';
+  info: {
+    description: 'Session Manager storage';
+    displayName: 'Session';
+    name: 'Session';
+    pluralName: 'sessions';
+    singularName: 'session';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+    i18n: {
+      localized: false;
+    };
+  };
+  attributes: {
+    absoluteExpiresAt: Schema.Attribute.DateTime & Schema.Attribute.Private;
+    childId: Schema.Attribute.String & Schema.Attribute.Private;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    deviceId: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Private;
+    expiresAt: Schema.Attribute.DateTime &
+      Schema.Attribute.Required &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'admin::session'> &
+      Schema.Attribute.Private;
+    origin: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sessionId: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Private &
+      Schema.Attribute.Unique;
+    status: Schema.Attribute.String & Schema.Attribute.Private;
+    type: Schema.Attribute.String & Schema.Attribute.Private;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    userId: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface AdminTransferToken extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_transfer_tokens';
   info: {
@@ -561,6 +618,48 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'pagesections.try-free-intro-call',
         'pagesections.give-it-time',
         'pagesections.prioritise-you',
+        'pagesections.why-we-are-here',
+        'pagesections.why-free-therapy-feature',
+        'pagesections.white-color-block',
+        'pagesections.therapy-reason-item',
+        'pagesections.therapy-qa-hero',
+        'pagesections.therapy-feature',
+        'pagesections.therapy-faq-item',
+        'pagesections.therapists-preview-section',
+        'pagesections.therapist-qualification-preview',
+        'pagesections.therapist-preview',
+        'pagesections.therapist-preview-block',
+        'pagesections.team-member',
+        'pagesections.step',
+        'pagesections.step-simple',
+        'pagesections.single-color-box',
+        'pagesections.perk',
+        'pagesections.our-team',
+        'pagesections.message',
+        'pagesections.how-to-choose-therapy-feature',
+        'pagesections.how-it-works-card',
+        'pagesections.home-banner-block',
+        'pagesections.help-someone-instructions-card',
+        'pagesections.getting-started-section',
+        'pagesections.feature',
+        'pagesections.feature-items',
+        'pagesections.feature-block',
+        'pagesections.faq-item',
+        'pagesections.eligibility-feature',
+        'pagesections.cta',
+        'pagesections.core-values',
+        'pagesections.core-value-box',
+        'pagesections.contact-us-hero',
+        'pagesections.color-box',
+        'pagesections.color-box-card',
+        'pagesections.client-story',
+        'pagesections.blog-carousel',
+        'pagesections.benefits-of-therapy-message',
+        'pagesections.article',
+        'pagesections.feeling-overwhelmed',
+        'pagesections.understand-online-therapy',
+        'pagesections.faq-block',
+        'pagesections.online-platforms-uk',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
@@ -1085,6 +1184,7 @@ declare module '@strapi/strapi' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::permission': AdminPermission;
       'admin::role': AdminRole;
+      'admin::session': AdminSession;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;

@@ -22,9 +22,6 @@
     },
     "name": {
       "type": "string"
-    },
-    "alt": {
-      "type": "string"
     }
   }
 }

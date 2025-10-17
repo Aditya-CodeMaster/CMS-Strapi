@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_faq_block",
+  "info": {
+    "displayName": "FAQ Block",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.faq-item"
+    },
+  }
+}

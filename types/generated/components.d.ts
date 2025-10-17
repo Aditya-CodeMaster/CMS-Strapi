@@ -489,14 +489,29 @@ export interface PagesectionsBenefitsOnlineTherapy
 }
 
 export interface PagesectionsBlogCarousel extends Struct.ComponentSchema {
-  collectionName: 'components_blocks_blog_carousel';
+  collectionName: 'components_sections_blog_carousels';
   info: {
+    description: 'Carousel section highlighting blog posts or resources';
     displayName: 'Blog Carousel';
-    icon: 'carousel';
+    icon: 'book-open';
+  };
+  options: {
+    draftAndPublish: false;
   };
   attributes: {
-    articles: Schema.Attribute.Component<'pagesections.article', true>;
-    background: Schema.Attribute.String;
+    background: Schema.Attribute.Enumeration<
+      ['bg-white', 'bg-grounding', 'bg-light', 'bg-dark']
+    > &
+      Schema.Attribute.DefaultTo<'bg-white'>;
+    ctaLink: Schema.Attribute.String & Schema.Attribute.DefaultTo<'/blog'>;
+    ctaText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Take me to the blog'>;
+    heading: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'We\u2019ve got your back'>;
+    subtitle: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Explore resources to help overcome common mental health challenges on our guide.'>;
+    type: Schema.Attribute.String & Schema.Attribute.DefaultTo<'blogCarousel'>;
   };
 }
 
@@ -606,7 +621,6 @@ export interface PagesectionsCoreValueBox extends Struct.ComponentSchema {
     icon: 'grid';
   };
   attributes: {
-    color: Schema.Attribute.String & Schema.Attribute.Required;
     text: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -621,7 +635,7 @@ export interface PagesectionsCoreValues extends Struct.ComponentSchema {
     boxes: Schema.Attribute.Component<'pagesections.core-value-box', true>;
     ctaText: Schema.Attribute.String;
     customButtonClass: Schema.Attribute.String;
-    subtitle: Schema.Attribute.JSON & Schema.Attribute.Required;
+    subtitle: Schema.Attribute.Text & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -714,6 +728,17 @@ export interface PagesectionsFancyFreeTherapy extends Struct.ComponentSchema {
   };
 }
 
+export interface PagesectionsFaqBlock extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_faq_block';
+  info: {
+    displayName: 'FAQ Block';
+    icon: 'question';
+  };
+  attributes: {
+    faqs: Schema.Attribute.Component<'pagesections.faq-item', true>;
+  };
+}
+
 export interface PagesectionsFaqItem extends Struct.ComponentSchema {
   collectionName: 'components_blocks_faq_items';
   info: {
@@ -721,7 +746,7 @@ export interface PagesectionsFaqItem extends Struct.ComponentSchema {
     icon: 'question';
   };
   attributes: {
-    answer: Schema.Attribute.Text & Schema.Attribute.Required;
+    answer: Schema.Attribute.RichText & Schema.Attribute.Required;
     question: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -793,6 +818,21 @@ export interface PagesectionsFeaturesBlock extends Struct.ComponentSchema {
     ctaText: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface PagesectionsFeelingOverwhelmed extends Struct.ComponentSchema {
+  collectionName: 'components_sections_feeling_overwhelmed';
+  info: {
+    displayName: 'Feeling Overwhelmed';
+    icon: 'help-circle';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
+    subtitle: Schema.Attribute.Text;
   };
 }
 
@@ -1062,8 +1102,7 @@ export interface PagesectionsMessage extends Struct.ComponentSchema {
   };
   attributes: {
     order: Schema.Attribute.Integer;
-    text: Schema.Attribute.Text & Schema.Attribute.Required;
-    type: Schema.Attribute.String & Schema.Attribute.Required;
+    text: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -1079,6 +1118,26 @@ export interface PagesectionsNotAllTheSame extends Struct.ComponentSchema {
   };
 }
 
+export interface PagesectionsOnlinePlatformsUk extends Struct.ComponentSchema {
+  collectionName: 'components_sections_online_platforms_uk';
+  info: {
+    displayName: 'Online Platforms UK';
+    icon: 'globe';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    features: Schema.Attribute.Component<'pagesections.feature', true>;
+    footerText: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface PagesectionsOurTeam extends Struct.ComponentSchema {
   collectionName: 'components_blocks_our_team';
   info: {
@@ -1087,7 +1146,7 @@ export interface PagesectionsOurTeam extends Struct.ComponentSchema {
   };
   attributes: {
     members: Schema.Attribute.Component<'pagesections.team-member', true>;
-    subtitle: Schema.Attribute.JSON;
+    subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -1214,7 +1273,6 @@ export interface PagesectionsTeamMember extends Struct.ComponentSchema {
     icon: 'user';
   };
   attributes: {
-    color: Schema.Attribute.String;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     picture: Schema.Attribute.Media & Schema.Attribute.Required;
     position: Schema.Attribute.String;
@@ -1376,7 +1434,6 @@ export interface PagesectionsTherapyQaHero extends Struct.ComponentSchema {
     displayName: 'TherapyQAHeroBlock';
   };
   attributes: {
-    alt: Schema.Attribute.String;
     ctaText: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     name: Schema.Attribute.String;
@@ -1442,6 +1499,26 @@ export interface PagesectionsUnderstandDifferentTherapy
     footerText: Schema.Attribute.RichText;
     subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface PagesectionsUnderstandOnlineTherapy
+  extends Struct.ComponentSchema {
+  collectionName: 'components_sections_understand_online_therapy';
+  info: {
+    description: 'Section explaining the concept and features of online therapy';
+    displayName: 'Understand Online Therapy';
+    icon: 'activity';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    bgColor: Schema.Attribute.Text;
+    features: Schema.Attribute.Component<'pagesections.feature-items', true>;
+    friends_image_desktop: Schema.Attribute.Media;
+    friends_image_mobile: Schema.Attribute.Media;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -1664,8 +1741,8 @@ export interface PagesectionsWhyWeAreHere extends Struct.ComponentSchema {
   };
   attributes: {
     image: Schema.Attribute.Media;
-    story: Schema.Attribute.JSON & Schema.Attribute.Required;
-    subtitle: Schema.Attribute.JSON & Schema.Attribute.Required;
+    story: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitle: Schema.Attribute.Text & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -1781,12 +1858,14 @@ declare module '@strapi/strapi' {
       'pagesections.eligibility-feature': PagesectionsEligibilityFeature;
       'pagesections.eligibility-section': PagesectionsEligibilitySection;
       'pagesections.fancy-free-therapy': PagesectionsFancyFreeTherapy;
+      'pagesections.faq-block': PagesectionsFaqBlock;
       'pagesections.faq-item': PagesectionsFaqItem;
       'pagesections.faq-section': PagesectionsFaqSection;
       'pagesections.feature': PagesectionsFeature;
       'pagesections.feature-block': PagesectionsFeatureBlock;
       'pagesections.feature-items': PagesectionsFeatureItems;
       'pagesections.features-block': PagesectionsFeaturesBlock;
+      'pagesections.feeling-overwhelmed': PagesectionsFeelingOverwhelmed;
       'pagesections.getting-started-section': PagesectionsGettingStartedSection;
       'pagesections.give-it-time': PagesectionsGiveItTime;
       'pagesections.guide-to-online-therapy': PagesectionsGuideToOnlineTherapy;
@@ -1805,6 +1884,7 @@ declare module '@strapi/strapi' {
       'pagesections.making-therapy-fit': PagesectionsMakingTherapyFit;
       'pagesections.message': PagesectionsMessage;
       'pagesections.not-all-the-same': PagesectionsNotAllTheSame;
+      'pagesections.online-platforms-uk': PagesectionsOnlinePlatformsUk;
       'pagesections.our-team': PagesectionsOurTeam;
       'pagesections.perk': PagesectionsPerk;
       'pagesections.prioritise-you': PagesectionsPrioritiseYou;
@@ -1828,6 +1908,7 @@ declare module '@strapi/strapi' {
       'pagesections.three-color-boxes': PagesectionsThreeColorBoxes;
       'pagesections.try-free-intro-call': PagesectionsTryFreeIntroCall;
       'pagesections.understand-different-therapy': PagesectionsUnderstandDifferentTherapy;
+      'pagesections.understand-online-therapy': PagesectionsUnderstandOnlineTherapy;
       'pagesections.unsure-where-to-start': PagesectionsUnsureWhereToStart;
       'pagesections.we-get-it': PagesectionsWeGetIt;
       'pagesections.we-know-what-is-like': PagesectionsWeKnowWhatIsLike;

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sections_understand_online_therapy",
+  "info": {
+    "displayName": "Understand Online Therapy",
+    "description": "Section explaining the concept and features of online therapy",
+    "icon": "activity"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.feature-items"
+    },
+    "friends_image_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "friends_image_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "bgColor": {
+      "type": "text"
+    }
+  }
+}

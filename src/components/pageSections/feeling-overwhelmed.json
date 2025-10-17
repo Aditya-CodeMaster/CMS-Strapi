@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_feeling_overwhelmed",
+  "info": {
+    "displayName": "Feeling Overwhelmed",
+    "icon": "help-circle"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

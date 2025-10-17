@@ -1,16 +1,39 @@
 {
-  "collectionName": "components_blocks_blog_carousel",
+  "collectionName": "components_sections_blog_carousels",
   "info": {
     "displayName": "Blog Carousel",
-    "icon": "carousel"
+    "description": "Carousel section highlighting blog posts or resources",
+    "icon": "book-open"
   },
-  "options": {},
+  "options": {
+    "draftAndPublish": false
+  },
   "attributes": {
-    "background": { "type": "string" },
-    "articles": {
-      "type": "component",
-      "repeatable": true,
-      "component": "pagesections.article"
+    "type": {
+      "type": "string",
+      "default": "blogCarousel"
+    },
+    "heading": {
+      "type": "string",
+      "required": true,
+      "default": "We’ve got your back"
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "Explore resources to help overcome common mental health challenges on our guide."
+    },
+    "ctaLink": {
+      "type": "string",
+      "default": "/blog"
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Take me to the blog"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": ["bg-white", "bg-grounding", "bg-light", "bg-dark"],
+      "default": "bg-white"
     }
   }
 }

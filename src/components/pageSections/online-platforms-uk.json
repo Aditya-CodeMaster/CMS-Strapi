@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_online_platforms_uk",
+  "info": {
+    "displayName": "Online Platforms UK",
+    "icon": "globe"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "footerText": {
+      "type": "text"
+    },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pagesections.feature"
+    }
+  }
+}

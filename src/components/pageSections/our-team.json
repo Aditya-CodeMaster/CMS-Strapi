@@ -7,7 +7,7 @@
   "options": {},
   "attributes": {
     "title": { "type": "string", "required": true },
-    "subtitle": { "type": "json" },
+    "subtitle": { "type": "text" },
     "members": {
       "type": "component",
       "repeatable": true,

@@ -8,11 +8,11 @@
   "attributes": {
     "title": { "type": "string", "required": true },
     "subtitle": {
-      "type": "json",
+      "type": "text",
       "required": true
     },
     "story": {
-      "type": "json",
+      "type": "text",
       "required": true
     },
     "image": { "type": "media", "multiple": false }

@@ -6,12 +6,8 @@
   },
   "options": {},
   "attributes": {
-    "type": {
-      "type": "string",
-      "required": true
-    },
     "text": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
     "order": {

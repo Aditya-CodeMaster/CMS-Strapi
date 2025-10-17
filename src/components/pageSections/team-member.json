@@ -8,7 +8,6 @@
   "attributes": {
     "name": { "type": "string", "required": true },
     "position": { "type": "string" },
-    "picture": { "type": "media", "multiple": false, "required": true },
-    "color": { "type": "string" }
+    "picture": { "type": "media", "multiple": false, "required": true }
   }
 }
